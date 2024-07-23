@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bingo Game</title>
+    <link rel="stylesheet" href="bingo-game.css">
+</head>
+<body>
+    <script>
+        window.addEventListener('click',()=> {
+            document.getElementById("song").play();
+        });
+    </script>
+    <div class="background"></div>
+    <div class="audio-container">
+        <div class ="audio">
+            <audio id = "song">
+                <source src="music.mp3" type="audio/mp3">
+    
+            </audio>
+
+        </div>
+
+        <header>
+            <h1>Bingo Game</h1>
+            <div id="game-info">
+                <p>Round<span id="round-no">1</span></p>
+                <p id="turn-info">Player 1's Turn</p>
+                <p>Complete 5 rows to win!</p>
+            </div>
+        </header>
+        <div id="bingo-cards">
+            <div class="bingo-card" id="card-1">
+                <h3>Card 1</h3>
+                <table>
+                    <tr><td><button>1</button></td><td><button>2</button></td><td><button>3</button></td><td><button>4</button></td><td><button>5</button></td></tr>
+                    <tr><td><button>6</button></td><td><button>7</button></td><td><button>8</button></td><td><button>9</button></td><td><button>10</button></td></tr>
+                    <tr><td><button>11</button></td><td><button>12</button></td><td><button>13</button></td><td><button>14</button></td><td><button>15</button></td></tr>
+                    <tr><td><button>16</button></td><td><button>17</button></td><td><button>18</button></td><td><button>19</button></td><td><button>20</button></td></tr>
+                    <tr><td><button>21</button></td><td><button>22</button></td><td><button>23</button></td><td><button>24</button></td><td><button>25</button></td></tr>
+                </table>
+            </div>
+            <div class="bingo-card" id="card-2">
+                <h3>Card 2</h3>
+                <table>
+                    <tr><td><button>1</button></td><td><button>2</button></td><td><button>3</button></td><td><button>4</button></td><td><button>5</button></td></tr>
+                    <tr><td><button>6</button></td><td><button>7</button></td><td><button>8</button></td><td><button>9</button></td><td><button>10</button></td></tr>
+                    <tr><td><button>11</button></td><td><button>12</button></td><td><button>13</button></td><td><button>14</button></td><td><button>15</button></td></tr>
+                    <tr><td><button>16</button></td><td><button>17</button></td><td><button>18</button></td><td><button>19</button></td><td><button>20</button></td></tr>
+                    <tr><td><button>21</button></td><td><button>22</button></td><td><button>23</button></td><td><button>24</button></td><td><button>25</button></td></tr>
+                </table>
+            </div>
+        </div>
+        <div id="result"></div>
+    </div>
+    <script src="bingo-game.js"></script>
+</body>
+</html>

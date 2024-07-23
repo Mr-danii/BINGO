@@ -1,0 +1,114 @@
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.background {
+    background-image: url("b1.jpg");
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: blur(8px);
+    z-index: -1;
+}
+
+.navbar {
+    width: 100%;
+    background: linear-gradient(to left, rgba(74, 197, 253, 1) 50%, rgba(74, 197, 253, 0.6) 85%);
+    color: white;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+}
+
+.navdiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo a {
+    color: black;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    text-align: center;
+    color: black;
+    z-index: 1;
+}
+
+.description {
+    font-size: 16px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    margin: 0 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    color: black;
+}
+
+#start-game {
+    background-color: #5cbaf0;
+}
+
+#start-game:hover {
+    background-color: rgb(14, 158, 224);
+}
+
+#exit-game {
+    background-color: #df6730;
+}
+
+#exit-game:hover {
+    background-color: #d62828;
+}
+
+.container h1 {
+    font-size: xxx-large;
+}

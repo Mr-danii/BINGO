@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bingo Game Setup</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <div class="background"></div>
+    <div class="container">
+        <h1>Bingo Game Setup</h1>
+        <form id="game-setup">
+            <label for="num-cards">Select Number of Cards (first ver (limited:2)): </label>
+            <select id="num-cards" name="num-cards">
+                <!-- Generate options dynamically from 2 to 8 -->
+                <!-- You can also manually add options if needed -->
+                <!-- Option generation in JavaScript is shown below -->
+            </select>
+            <br><br>
+            <label for="num-rounds">Select Number of Rounds (first ver (limited:1)):</label>
+            <select id="num-rounds" name="num-rounds">
+                <!-- Generate options dynamically from 1 to 15 -->
+                <!-- You can also manually add options if needed -->
+                <!-- Option generation in JavaScript is shown below -->
+            </select>
+            <br><br>
+            <button type="submit">Start Game</button>
+        </form>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
